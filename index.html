@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop | Nandini Sharma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+    }
+    body{
+        background-color: rgb(13, 30, 53);
+        font-family:'Segoe UI',sans-serif;
+    }
+    .navbar{
+        background-color: rgb(13, 30, 53);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 0 30px black;
+    }
+    .navlogo{
+        font-size: 25px;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li {
+        list-style: none;
+        margin: 0px 10px ;
+    }
+    a{
+        text-decoration: none;
+        color: #bdd5f5;
+        transition: all .3s;
+    }
+    a:hover{
+        color: rgb(69, 121, 172);
+    }
+    .cart-btn {
+        background-color: rgba(250, 235, 215, 0.151);
+        margin: 0 10px;
+        padding: 5px 15px;
+        border-radius: 1em;
+    }
+    /* main */
+    .booksection{
+        display: flex;
+    }
+    .recmnd-books{
+        margin: 20px;
+        padding: 10px;
+        background-color: #bdd5f51e;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .book-container{
+        width: 17.6%;
+        padding: 10px;
+        margin: 5px;
+        background-color: #00000042;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    .book-img img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .book-btn{
+        font-size: 20px;
+        text-align: center;
+        background-color: #bdd5f51e;
+        border-radius: 1em;
+        margin-top: 10px;
+        padding: 5px;
+        font-weight: bold;
+        transition: all .5s;
+    }
+    .book-btn:hover{
+        background-color: rgb(24, 76, 117);
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.527);
+    }
+    /* footer */
+    .footer{
+        padding: 20px 0;
+        background-color: #21334c66;
+    }
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .social-media div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .social-media div a{
+        margin: 6px;
+        background-color: #bdd5f531;
+        border-radius: 50%;
+        font-size: 25px;
+        transition: all .3s;
+    }
+    .social-media div a:hover{
+        background-color: #4055ba39;
+        box-shadow: 0 0 30px 0 rgb(28, 27, 27);
+    }
+    .social-media div a i{
+        margin: 10px;
+    }
+    .f-content{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+</style>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navlogo">
+                <a href="">BookShop</a>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <div class="cart-btn">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="recmnd-books">
+            <h1>Recomended Books</h1>
+            <div class="booksection">
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/book/g/l/9/harry-potter-and-the-philosopher-s-stone-original-imaghfk2gdamwr7g.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        Harry Potter and the Philosopher's Stone the adventure and the mistry with the magic and the power.
+                        Book 1 of 7: Harry Potter
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://m.media-amazon.com/images/I/81TeXefBnGL._AC_UL320_.jpg" alt="">
+                    </div>
+                    <div class="book-info">
+                        Bhagvad Gita As It Is English New Edition Hardcover – Big Book, 1 January 2019
+                        by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (Author)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/kxjav0w0/book/l/a/0/7-decisions-1-destination-original-imag9y88jy39cmhz.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        7 decisions 1 destination :This book tells you about your goals and to get them. (English, Paperback, Deoskar Vaidehi Anil)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/l15bxjk0/regionalbooks/1/5/l/the-power-of-your-subconscious-mind-original-imagcrt5zz76dr3w.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        The Power Of Your Subconscious Mind :This book tells us about our Subconscious mind (Paperback, Joseph Murphy)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://m.media-amazon.com/images/I/71Q0U-8lxJS._AC_UL320_.jpg" alt="">
+                    </div>
+                    <div class="book-info">
+                        Dopamine Detox : A Short Guide to Remove Distractions and Get Your Brain to Do Hard Things (Productivity Series Book 1)
+
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="recmnd-books">
+            <h1>Recomended Audio Books</h1>
+            <div class="booksection">
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/book/g/l/9/harry-potter-and-the-philosopher-s-stone-original-imaghfk2gdamwr7g.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        Harry Potter and the Philosopher's Stone the adventure and the mistry with the magic and the power.
+                        Book 1 of 7: Harry Potter
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Listen Now</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://m.media-amazon.com/images/I/81TeXefBnGL._AC_UL320_.jpg" alt="">
+                    </div>
+                    <div class="book-info">
+                        Bhagvad Gita As It Is English New Edition Hardcover – Big Book, 1 January 2019
+                        by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada (Author)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Listen Now</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/kxjav0w0/book/l/a/0/7-decisions-1-destination-original-imag9y88jy39cmhz.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        7 decisions 1 destination :This book tells you about your goals and to get them. (English, Paperback, Deoskar Vaidehi Anil)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Listen Now</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://rukminim1.flixcart.com/image/612/612/l15bxjk0/regionalbooks/1/5/l/the-power-of-your-subconscious-mind-original-imagcrt5zz76dr3w.jpeg?q=70" alt="">
+                    </div>
+                    <div class="book-info">
+                        The Power Of Your Subconscious Mind :This book tells us about our Subconscious mind (Paperback, Joseph Murphy)
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Listen Now</a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <div class="book-img">
+                        <img src="https://m.media-amazon.com/images/I/71Q0U-8lxJS._AC_UL320_.jpg" alt="">
+                    </div>
+                    <div class="book-info">
+                        Dopamine Detox : A Short Guide to Remove Distractions and Get Your Brain to Do Hard Things (Productivity Series Book 1)
+
+                    </div>
+                    <div class="book-btn">
+                        <a href="">Listen Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="info">
+            <div class="info-1">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Support 24/7</a></li>
+                    <li><a href="">Terms And Conditions</a></li>
+                </ul>
+            </div>
+            <div class="info-2">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Secure Shopping</a></li>
+                    <li><a href="">Copyright Policy</a></li>
+                </ul>
+            </div>
+            <div class="info-3">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">Checkout</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Transactions</a></li>
+                </ul>
+            </div>
+            <div class="info-4">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="">Payment</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Return</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <div>
+                <a href=""><i class="fa-brands fa-twitter" style="color: rgb(47, 168, 255);"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" style="color: rgb(142, 168, 255);"></i></a>
+                <a href=""><i class="fa-brands fa-facebook" style="color: rgb(13, 114, 229);"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: hotpink;"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" style="color: rgb(255, 72, 72);"></i></a>
+            </div>
+        </div>
+        <div class="f-content">
+             <p>Copyright &copy; BookShop 2023 All rights reserved.</p> 
+        </div>
+    </footer>
+</body>
+</html>
